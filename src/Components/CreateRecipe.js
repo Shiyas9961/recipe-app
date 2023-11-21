@@ -12,7 +12,7 @@ function CreateRecipe() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:8000/recipe/create',{
+        axios.post('https://recipe-app-server-fl4d.onrender.com/recipe/create',{
             name,
             discription,
             ingredients,

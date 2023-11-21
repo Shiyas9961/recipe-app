@@ -10,12 +10,12 @@ function Details() {
 
     useEffect(()=>{
         const getRecipes = () => {
-            axios.get(`http://localhost:8000/recipe/${id}`).then(res=>{
+            axios.get(`https://recipe-app-server-fl4d.onrender.com/recipe/${id}`).then(res=>{
             setResipe(res.data)
         }).catch(err=>console.log(err.message))
     }
         const fetchSavedResipes = () => {
-            axios.get(`http://localhost:8000/recipe/saved/${userId}`).then(res=>{
+            axios.get(`https://recipe-app-server-fl4d.onrender.com/recipe/saved/${userId}`).then(res=>{
                 setSavedResipe(res.data.savedRecipe)
             }).catch(err=>console.log(err.message))
         }
@@ -24,7 +24,7 @@ function Details() {
     },[id,userId])
 
     const saveRecipes = (userId,recipeId) => {
-        axios.put(`http://localhost:8000/recipe`,{
+        axios.put(`https://recipe-app-server-fl4d.onrender.com/recipe`,{
             userId,
             recipeId
         }).then(res=>console.log(res.data)).catch((err)=>console.log(err.message))

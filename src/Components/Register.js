@@ -10,7 +10,7 @@ function Register() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:8000/auth/register',{
+        axios.post('https://recipe-app-server-fl4d.onrender.com/auth/register',{
             username,
             email,
             password

@@ -6,7 +6,7 @@ function Home() {
   const [recipe,setRecipe] = useState([])
 
   useEffect(()=>{
-    axios.get('http://localhost:8000/recipe').then(res=>{
+    axios.get('https://recipe-app-server-fl4d.onrender.com/recipe').then(res=>{
       setRecipe(res.data)
     }).catch(err=>console.log(err))
   },[])

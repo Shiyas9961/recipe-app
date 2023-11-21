@@ -11,7 +11,7 @@ function Login() {
     axios.defaults.withCredentials = true
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:8000/auth/login',{
+        axios.post('https://recipe-app-server-fl4d.onrender.com/auth/login',{
             username,
             password
         }).then((res)=>{

@@ -8,7 +8,7 @@ function NavGation() {
   const navigate = useNavigate()
   const handleLogout = () => {
     localStorage.clear()
-    axios.get('http://localhost:8000/auth/logout').then(()=>{
+    axios.get('https://recipe-app-server-fl4d.onrender.com/auth/logout').then(()=>{
       navigate('/register')
     }).catch(err=>console.log(err))
   }
