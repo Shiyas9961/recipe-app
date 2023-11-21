@@ -7,7 +7,7 @@ function SavedRecipe() {
   const userId = localStorage.getItem("id")
 
   useEffect(()=>{
-    axios.get(`http://localhost:8000/recipe/savedRecipe/${userId}`).then(res=>{
+    axios.get(`https://recipe-app-server-fl4d.onrender.com/recipe/savedRecipe/${userId}`).then(res=>{
       setSavedRecipe(res.data)
     }).catch(err=>console.log(err))
   },[userId])
