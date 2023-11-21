@@ -19,7 +19,7 @@ function SavedRecipe() {
           return (
             <div key={items._id} className='d-flex flex-column align-items-center mt-4'>
                 <div className="w-50">
-                  <Link to={`recipe/${items._id}`} className='text-decoration-none text-dark'>
+                  <Link to={`/recipe/${items._id}`} className='text-decoration-none text-dark'>
                     <h2 style={{cursor:'pointer'}}>{items.name}</h2>
                   </Link>
                 </div>
