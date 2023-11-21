@@ -9,7 +9,7 @@ const cookieParser = require('cookie-parser')
 
 
 app.use(cors({
-    origin : ["http://localhost:3000"],
+    origin : ["https://recipe-app-client-6lo0.onrender.com"],
     methods : ["GET","POST","PUT","DELETE"],
     credentials : true
 }))
